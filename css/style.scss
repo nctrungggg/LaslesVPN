@@ -1,0 +1,137 @@
+@import "variable";
+@import "header";
+@import "banner";
+@import "statistics";
+@import "features";
+@import "plan";
+@import "network";
+@import "sponsored";
+@import "customers";
+@import "subscribe";
+@import "footer";
+@import "scroll-btn";
+
+.customers,
+.subscribe,
+.footer {
+  display: none;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-weight: 400;
+  line-height: 1;
+  font-family: "Rubik", sans-serif;
+
+  color: $text-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+}
+
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.wrapper-second {
+  background-color: #f6f6f6;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: $gray-color;
+  background-color: transparent;
+  padding: 1.4rem 6rem;
+
+  outline: none;
+  cursor: pointer;
+  border-radius: 5rem;
+  line-height: normal;
+  transition: 0.3s ease-in-out;
+
+  &--outline {
+    border: 1px solid $main-color;
+    color: $main-color;
+
+    &:hover {
+      background-color: $main-color;
+      color: $white-color;
+      box-shadow: $box-shadow;
+    }
+  }
+
+  &--contained {
+    background-color: $main-color;
+    color: $white-color;
+    box-shadow: $box-shadow;
+    padding: 2rem 7rem;
+
+    &:hover {
+      background-color: $gray-color;
+      box-shadow: $box-shadow-gray;
+    }
+  }
+
+  &--outline {
+    border: 1px solid $main-color;
+    color: $main-color;
+    font-weight: 500;
+  }
+}
+
+.block {
+  &-caption {
+    text-align: center;
+  }
+
+  &-heading {
+    font-size: 3.5rem;
+    color: $gray-color;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  &-desc {
+    font-size: 1.6rem;
+    line-height: 1.9;
+    margin-bottom: 6rem;
+  }
+
+  @media screen and (max-width: 767.98px) {
+    &-heading {
+      font-size: 2rem;
+    }
+
+    &-desc {
+      font-size: 1.4rem;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.scroll-btn {
+  position: fixed;
+  bottom: -6rem;
+  right: 5rem;
+
+  height: 5rem;
+  border-radius: 50%;
+  opacity: 0;
+
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+
+  &__icon {
+    background-color: $secondary-color;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+
+    transition: all 0.2s ease-out;
+    display: flex;
+
+    & ion-icon {
+      margin: auto;
+      color: $main-color;
+      font-size: 3rem;
+    }
+
+    &:hover {
+      background-color: $main-color;
+    }
+    &:hover > ion-icon {
+      color: #fff;
+    }
+  }
+}
+.show {
+  opacity: 1;
+  bottom: 6rem;
+}

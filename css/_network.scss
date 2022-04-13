@@ -1,0 +1,21 @@
+.network {
+  margin-top: 15rem;
+
+  &-heading span {
+    display: block;
+  }
+
+  &-desc span {
+    font-weight: 600;
+  }
+
+  &-image {
+    margin-top: 15rem;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

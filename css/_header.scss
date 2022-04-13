@@ -1,0 +1,86 @@
+.header {
+  padding-top: 5rem;
+  transition: 0.5s ease-in-out;
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &-logo {
+    color: $gray-color;
+    font-size: 2rem;
+    margin-right: 16rem;
+    font-weight: 500;
+
+    & span {
+      font-weight: 600;
+    }
+  }
+
+  &-menu {
+    display: flex;
+    gap: 4rem;
+    font-size: 1.6rem;
+
+    & a {
+      transition: 0.2s ease-in-out;
+      color: $text-color;
+
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+
+  &-link {
+    margin-left: auto;
+  }
+
+  @media screen and (max-width: 1279.98px) {
+    padding-top: 3rem;
+
+    &-logo {
+      margin-right: 0;
+    }
+
+    &-menu {
+      margin: 0 auto;
+    }
+
+    &-link {
+      margin-left: 0;
+    }
+  }
+
+  @media screen and (max-width: 1023.98px) {
+    &-menu {
+      display: none;
+    }
+
+    &-link {
+      margin-left: auto;
+
+      & a {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767.98px) {
+    &-logo {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.sticky {
+  transition: 0.5s ease-in-out;
+
+  position: fixed;
+  background-color: $white-color;
+  width: 100%;
+  z-index: 100;
+  padding: 2rem 0;
+}
