@@ -25,8 +25,8 @@ headerObserver.observe(banner);
 const displayBTT = function (entries) {
   const [entry] = entries;
 
-  if (!entry.isIntersecting) btt.classList.add("show");
-  else btt.classList.remove("show");
+  if (!entry.isIntersecting) btt.classList.add("scroll-btn--show");
+  else btt.classList.remove("scroll-btn--show");
 
   btt.addEventListener("click", function (e) {
     banner.scrollIntoView({ behavior: "smooth" });
