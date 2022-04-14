@@ -12,6 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header sticky">
@@ -57,12 +59,17 @@
                 >Get Started</a
               >
             </div>
-            <div class="banner-images">
+            <div
+              class="banner-images"
+              data-aos="zoom-in"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <img src="./images/Illustration 1.png" alt="" />
             </div>
           </section>
 
-          <section id="about" class="statistics">
+          <section id="about" class="statistics" data-aos="fade-up">
             <div class="statistics-item">
               <div class="statistics-icon">
                 <ion-icon name="person-sharp"></ion-icon>
@@ -95,7 +102,12 @@
           </section>
 
           <section id="features" class="features">
-            <div class="features-image">
+            <div
+              class="features-image"
+              data-aos="zoom-in"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <img src="./images/Illustration 2.png" alt="" />
             </div>
             <div class="features-content">
@@ -459,5 +471,10 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

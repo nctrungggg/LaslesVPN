@@ -1,4 +1,5 @@
 "use strict";
+
 const header = document.querySelector(".header");
 const banner = document.querySelector(".banner");
 const btt = document.querySelector(".scroll-btn");
