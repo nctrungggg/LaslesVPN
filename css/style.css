@@ -68,15 +68,15 @@
   .header-link {
     margin-left: auto;
   }
-  .header-link a {
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-  }
 }
 
 @media screen and (max-width: 767.98px) {
   .header-logo {
     font-size: 1.8rem;
+  }
+  .header a {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -740,9 +740,6 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     gap: 2rem;
   }
 }
