@@ -63,14 +63,14 @@
       position: fixed;
       top: 0;
       right: 0;
-      width: 90%;
+      width: 70%;
       max-width: 300px;
       background-color: white;
       z-index: 99999;
       display: block;
       bottom: 0;
       border-left: 1px solid #eee;
-      padding: 50px 15px;
+      padding: 3rem 2rem;
       transition: transform 0.5s linear;
       transform: translateX(100%);
     }
