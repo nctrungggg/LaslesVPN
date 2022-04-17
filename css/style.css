@@ -701,8 +701,9 @@
     text-align: center;
     padding: 5rem 5rem;
   }
-  .subscribe-link {
+  .subscribe .subscribe-link {
     margin-top: 4rem;
+    padding: 2rem 0;
     width: 100%;
   }
 }
