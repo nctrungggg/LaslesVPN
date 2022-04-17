@@ -36,8 +36,13 @@
   &-link {
     margin-left: auto;
   }
+  @media screen and (min-width: 1024px) {
+    .menu-toggle {
+      display: none;
+    }
+  }
 
-  @media screen and (max-width: 1279.98px) {
+  @include maxWith(1279.98px) {
     padding-top: 3rem;
 
     &-logo {
@@ -53,17 +58,48 @@
     }
   }
 
-  @media screen and (max-width: 1023.98px) {
+  @include maxWith(1023.98px) {
     &-menu {
-      display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 90%;
+      max-width: 300px;
+      background-color: white;
+      z-index: 99999;
+      display: block;
+      bottom: 0;
+      border-left: 1px solid #eee;
+      padding: 50px 15px;
+      transition: transform 0.5s linear;
+      transform: translateX(100%);
+    }
+
+    & .is-active {
+      transform: translateX(0);
+    }
+
+    &-menu-link {
+      display: block;
+      padding: 20px;
+      border-radius: 6px;
+      &:hover {
+        color: $white-color !important;
+        background-color: $main-color;
+      }
     }
 
     &-link {
       margin-left: auto;
     }
+
+    & a {
+      padding: 1.2rem 4rem;
+      font-size: 1.2rem;
+    }
   }
 
-  @media screen and (max-width: 767.98px) {
+  @include maxWith(767.98px) {
     &-logo {
       font-size: 1.8rem;
     }
@@ -71,6 +107,10 @@
     & a {
       padding: 1rem 2rem;
       font-size: 1.2rem;
+    }
+
+    .menu-toggle {
+      font-size: 2.4rem;
     }
   }
 }
@@ -83,4 +123,11 @@
   width: 100%;
   z-index: 100;
   padding: 2rem 0;
+}
+
+.menu-toggle {
+  font-size: 3rem;
+  margin-left: 2rem;
+  color: $gray-color;
+  cursor: pointer;
 }
