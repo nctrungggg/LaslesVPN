@@ -32,14 +32,35 @@
   font-size: 1.6rem;
 }
 
-.header-menu a {
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+.header-menu-link {
   color: #4f5665;
+  position: relative;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
-.header-menu a:hover {
+.header-menu-link:after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: auto;
+  right: 0;
+  width: 0;
+  height: 3px;
+  background-color: #f53838;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.header-menu-link:hover {
   color: #f53838;
+}
+
+.header-menu-link:hover:after {
+  width: 100%;
+  left: 0;
+  right: auto;
 }
 
 .header-link {
@@ -94,7 +115,9 @@
   .header-menu-link {
     display: block;
     padding: 20px;
-    border-radius: 6px;
+  }
+  .header-menu-link:after {
+    content: none;
   }
   .header-menu-link:hover {
     color: #fff !important;
@@ -115,6 +138,7 @@
   }
   .header a {
     padding: 1rem 2rem;
+    font-size: 1.2rem;
   }
   .header .menu-toggle {
     font-size: 2.4rem;
@@ -801,9 +825,11 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4rem;
   }
 }
 
