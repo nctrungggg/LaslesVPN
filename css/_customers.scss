@@ -13,8 +13,8 @@
   &-item {
     border: 2px solid $gray-blur;
     padding: 3rem;
-    width: 33.33%;
     border-radius: 1rem;
+    flex-basis: 33.33%;
 
     transition: 0.2s ease-in-out;
     background-color: $white-color;
@@ -61,6 +61,7 @@
 
     & ion-icon {
       color: #fea250;
+      margin-top: -2px;
     }
   }
 
@@ -72,12 +73,23 @@
 
   @include maxWith(1023.98px) {
     &-list {
-      display: block;
+      flex-direction: column;
+      gap: 2rem;
     }
-    
+
     &-item {
-      width: 100%;
-      margin-bottom: 2rem;
+      flex-basis: auto;
+    }
+
+    &-content {
+      font-size: 1.4rem;
+
+      // display: -webkit-box;
+      // -webkit-line-clamp: 3;
+      // -webkit-box-orient: vertical;
+      // overflow: hidden;
+      // text-overflow: ellipsis;
+      // word-break: break-word;
     }
   }
 }
