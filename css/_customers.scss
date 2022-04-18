@@ -78,18 +78,18 @@
     }
 
     &-item {
-      flex-basis: auto;
+      flex-basis: 20rem;
     }
 
     &-content {
       font-size: 1.4rem;
 
-      // display: -webkit-box;
-      // -webkit-line-clamp: 3;
-      // -webkit-box-orient: vertical;
-      // overflow: hidden;
-      // text-overflow: ellipsis;
-      // word-break: break-word;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
     }
   }
 }
