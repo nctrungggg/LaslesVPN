@@ -2,7 +2,6 @@
   margin-top: 10rem;
 
   display: flex;
-  // justify-content: space-between;
   gap: 17rem;
 
   &-image {
@@ -59,7 +58,7 @@
 
   @media screen and (max-width: 767.98px) {
     flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
 
     margin-top: 8rem;
 

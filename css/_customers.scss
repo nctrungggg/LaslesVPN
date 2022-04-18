@@ -69,4 +69,15 @@
     line-height: 1.9;
     color: $gray-color;
   }
+
+  @include maxWith(1023.98px) {
+    &-list {
+      display: block;
+    }
+    
+    &-item {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
 }

@@ -115,7 +115,6 @@
   }
   .header a {
     padding: 1rem 2rem;
-    font-size: 1.2rem;
   }
   .header .menu-toggle {
     font-size: 2.4rem;
@@ -369,7 +368,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
     margin-top: 8rem;
   }
   .features > * {
@@ -643,6 +642,16 @@
   color: #0b132a;
 }
 
+@media screen and (max-width: 1023.98px) {
+  .customers-list {
+    display: block;
+  }
+  .customers-item {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
 .subscribe {
   background-color: #fff;
   border-radius: 1rem;
@@ -701,9 +710,12 @@
     text-align: center;
     padding: 5rem 5rem;
   }
+  .subscribe-title h2 {
+    font-size: 2.2rem;
+  }
   .subscribe .subscribe-link {
     margin-top: 4rem;
-    padding: 2rem 0;
+    padding: 1.4rem 0;
     width: 100%;
   }
 }
@@ -892,7 +904,8 @@ img {
 }
 
 .wrapper-second {
-  background-color: #f6f6f6;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-45.04%, #f8f8f8), color-stop(88.56%, rgba(248, 248, 248, 0)));
+  background: linear-gradient(180deg, #f8f8f8 -45.04%, rgba(248, 248, 248, 0) 88.56%);
 }
 
 .container {
@@ -972,12 +985,6 @@ img {
   }
   .block-desc {
     font-size: 1.4rem;
-  }
-}
-
-@media screen and (max-width: 767.98px) {
-  .customers {
-    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
